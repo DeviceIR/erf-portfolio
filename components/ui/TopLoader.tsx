@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { usePathname } from "next/navigation"; // For detecting route changes
+import { usePathname } from "next/navigation";
 
 export default function TopLoader() {
   const pathname = usePathname();
@@ -11,44 +11,37 @@ export default function TopLoader() {
   useEffect(() => {
     if (!pathname) return;
 
-    let interval: number;
-
-    // Start loading
     setLoading(true);
     setProgress(0);
 
-    // eslint-disable-next-line prefer-const
-    interval = window.setInterval(() => {
-      setProgress((prev) => {
-        if (prev >= 90) {
-          clearInterval(interval);
-          return prev;
-        }
-        return prev + Math.random() * 10; // fake progress
-      });
-    }, 200);
+    // Step-like fake loading
+    const steps = [40, 75, 100]; // define fake progress steps
+    const delays = [200, 400, 700]; // when each step should happen
 
-    // Finish loading after "route changes"
-    const finishTimeout = window.setTimeout(() => {
-      setProgress(100);
-      window.setTimeout(() => {
-        setProgress(0);
-        setLoading(false);
-      }, 300);
-    }, 1000); // simulate network delay
+    const timers = steps.map((step, index) =>
+      setTimeout(() => {
+        setProgress(step);
+        if (step === 100) {
+          // once complete, hide after short delay
+          setTimeout(() => {
+            setLoading(false);
+            setProgress(0);
+          }, 300);
+        }
+      }, delays[index])
+    );
 
     return () => {
-      clearInterval(interval);
-      clearTimeout(finishTimeout);
+      timers.forEach(clearTimeout);
     };
   }, [pathname]);
 
   if (!loading) return null;
 
   return (
-    <div className="fixed top-0 left-0 w-full h-2 z-52 bg-[var(--color-foreground)]">
+    <div className="fixed top-0 left-0 w-full h-2 z-[9999] bg-transparent">
       <div
-        className="h-2  text-white transition-all duration-200"
+        className="h-1 bg-[var(--color-foreground)] transition-all duration-300 ease-out rounded-2xl"
         style={{ width: `${progress}%` }}
       />
     </div>

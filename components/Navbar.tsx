@@ -31,7 +31,7 @@ export default function Navbar() {
             <span>Erfan</span>
             <span className=" bg-opacity-70 backdrop-blur-md z-50 text-xl text-[#A7ABAE]">
               {" "}
-              — Designer &amp; Maker
+              — Web Developer
             </span>
           </h1>
         </Link>
