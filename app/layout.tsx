@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="bg-[var(--color-background)] text-[var(--color-forground)] font-sans relative">
+      <body className="bg-[var(--color-background)] text-[var(--color-forground)] font-sans relative overflow-y-hidden">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -26,11 +26,11 @@ export default function RootLayout({
           {/* fake loader for reloading the page */}
           <TopLoader />
 
-          {/* nav fixed top */}
-          <Navbar />
-
-          {/* Page content starts below Navbar */}
           <>
+            {/* nav fixed top */}
+            <Navbar />
+
+            {/* Page content starts below Navbar */}
             <main className="pt-16">{children}</main>
           </>
         </ThemeProvider>

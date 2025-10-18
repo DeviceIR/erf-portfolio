@@ -9,7 +9,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-start px-6 md:px-20 bg-[var(--color-background)] text-[var(--color-forground)]">
+    <section className="h-16 min-h-screen flex flex-col justify-center items-start px-6 md:px-20 bg-[var(--color-background)] text-[var(--color-forground)]">
       {/* Main headline */}
       <motion.h3
         className="text-xl md:text-lg font-bold bg-[var(--color-background)] text-[var(--color-forground)] fade-in-5"
@@ -20,12 +20,49 @@ export default function Hero() {
         FrontEnd Developer
       </motion.h3>
       <motion.h1
-        className="text-4xl md:text-6xl font-bold bg-[var(--color-background)] text-[var(--color-forground)]"
+        className="text-4xl md:text-6xl font-bold bg-[var(--color-background)] text-[var(--color-forground)] flex"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        Hello I’m <span className="text-blue-500">Erfan</span>
+        Hello I’m{" "}
+        <span className="text-blue-500 flex gap-0.5 pl-2">
+          <motion.p
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            E
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            r
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
+            f
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.3 }}
+          >
+            a
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.5 }}
+          >
+            n
+          </motion.p>
+        </span>
       </motion.h1>
 
       {/* Subtext */}
@@ -48,17 +85,12 @@ export default function Hero() {
         <Link
           href="https://drive.google.com/file/d/1huVu1ayio9u_1bS6lUrQ3zroIt52uNDm/view?usp=drive_link"
           className=" bg-[var(--color-background)] text-[var(--color-forground)] border-[var(--color--foreground)]
-           border-3 px-6 py-2 rounded-3xl 
+           border-2 px-6 py-2 rounded-3xl 
            font-medium  transition"
         >
           Download CV
         </Link>
-        {/* <Link
-          href="/contact"
-          className="px-6 py-3 border border-gray-600 bg-[var(--color-foreground)] text-[var(--color-background)] rounded-xl hover:border-gray-300 transition font-medium"
-        >
-          Contact Me
-        </Link> */}
+
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}

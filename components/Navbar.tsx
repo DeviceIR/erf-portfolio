@@ -23,12 +23,12 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-[var(--color-background)] text-[var(--color-forground)] bg-opacity-70 backdrop-blur-md z-50">
+    <nav className="fixed top-0 w-full bg-[var(--color-background)] text-[var(--color-forground)] bg-opacity-70 backdrop-blur-md z-50 shadow-sm border-1  border-b-[#ffffffd1AR] ">
       <div className="container mx-auto flex justify-between items-center h-16 px-0 md:px-0">
         {/* Logo / Name */}
         <Link href="/">
           <h1 className="text-lg md:text-xl w-full  text-[var(--color-foreground)]">
-            <span>Erfan</span>
+            <span className="font-medium tracking-widest">DeviceIR</span>
             <span className=" bg-opacity-70 backdrop-blur-md z-50 text-xl text-[#A7ABAE]">
               {" "}
               — Web Developer
@@ -42,7 +42,7 @@ export default function Navbar() {
             <motion.li key={link.href} variants={linkHover} whileHover="hover">
               <Link
                 href={link.href}
-                className="hover:text-white transition-colors"
+                className="  text-[var(--color-forground)] hover:text-[var(--color-foreground)] transition-colors text-lg"
               >
                 {link.name}
               </Link>
