@@ -9,8 +9,8 @@ const navLinks = [
   { name: "Home", href: "/" },
   { name: "Projects", href: "/projects" },
   { name: "About", href: "/about" },
-  { name: "Blog", href: "/blog" },
-  { name: "Contact", href: "/contact" },
+  // { name: "Blog", href: "/blog" },
+  // { name: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -24,7 +24,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 w-full bg-[var(--color-background)] text-[var(--color-forground)] bg-opacity-70 backdrop-blur-md z-50 shadow-sm border-1  border-b-[#ffffffd1AR] ">
-      <div className="container mx-auto flex justify-between items-center h-16 px-0 md:px-0">
+      <div className=" xl:mx-12 lg:mx-6 md:mx-4 sm:mx-2 px-auto flex justify-between items-center h-16 px-0 md:px-0">
         {/* Logo / Name */}
         <Link href="/">
           <h1 className="text-lg md:text-xl w-full  text-[var(--color-foreground)]">
@@ -37,26 +37,32 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Links */}
-        <ul className="hidden md:flex gap-8 items-center bg-opacity-70 backdrop-blur-md z-50font-medium">
-          {navLinks.map((link) => (
-            <motion.li key={link.href} variants={linkHover} whileHover="hover">
-              <Link
-                href={link.href}
-                className="  text-[var(--color-forground)] hover:text-[var(--color-foreground)] transition-colors text-lg"
+        <div className="flex gap-4 items-center justify-end">
+          <ul className="hidden md:flex gap-8 items-center bg-opacity-70 backdrop-blur-md z-50 font-medium">
+            {navLinks.map((link) => (
+              <motion.li
+                key={link.href}
+                variants={linkHover}
+                whileHover="hover"
               >
-                {link.name}
-              </Link>
-            </motion.li>
-          ))}
-        </ul>
+                <Link
+                  href={link.href}
+                  className="  text-[var(--color-forground)] hover:text-[var(--color-foreground)] transition-colors text-lg"
+                >
+                  {link.name}
+                </Link>
+              </motion.li>
+            ))}
+          </ul>
 
-        {/* Contact Button */}
-        <div className="flex gap-2">
-          <ModeToggle />
-          <div className=" md:block ">
-            <Button variant="outline">
-              <Link href="/contact">Contact</Link>
-            </Button>
+          {/* Contact Button */}
+          <div className="flex gap-2">
+            <ModeToggle />
+            <div className=" md:block ">
+              <Button variant="outline">
+                <Link href="/contact">Contact</Link>
+              </Button>
+            </div>
           </div>
         </div>
       </div>

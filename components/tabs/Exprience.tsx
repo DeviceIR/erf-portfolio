@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Exprience() {
   const baseLi =
-    "bg-[var(--color-card-background)] text-[var(--color-foreground)] p-4 rounded-2xl flex items-center justify-center transition duration-1000 group relative hover:bg-[var(--color-background)] flex flex-col justify-center items-start ";
+    "bg-[var(--color-card-background)] text-[var(--color-foreground)] p-4 rounded-2xl flex items-center justify-center transition duration-1000 group relative hover:bg-[var(--color-background)] flex flex-col justify-center items-start border border-transparent hover:border-green-500  ";
   const tooltip =
     "absolute -top-8 left-1/2 -translate-x-1/2 bg-black text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10";
 
@@ -14,53 +14,53 @@ export default function Exprience() {
       className="w-full overflow-x-auto py-4"
     >
       <ul className="grid grid-cols-1 gap-4">
-        <li className={`${baseLi} `}>
+        <li className={`${baseLi} group`}>
           <motion.h1
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 5, x: -120 }}
             animate={{ opacity: 1, y: 5, x: 5 }}
-            transition={{ duration: 0.4 }}
-            className="font-bold tracking-wider"
+            transition={{ duration: 0.2 }}
+            className="font-bold tracking-wider group-hover:scale-105 transition duration-500"
           >
             Game Dev
           </motion.h1>
           <motion.h4
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 5, x: -120 }}
             animate={{ opacity: 1, y: 5, x: 5 }}
-            transition={{ duration: 0.4 }}
-            className="font-medium opacity-70"
+            transition={{ duration: 0.5 }}
+            className="font-medium opacity-70 group-hover:scale-105  transition duration-500"
           >
             2022 - 2023
           </motion.h4>
           <motion.h3
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 5, x: 5 }}
-            transition={{ duration: 0.4 }}
+            transition={{ duration: 1 }}
           >
             -build mini games like zigzag / 3Dpong / poem guess
           </motion.h3>
         </li>
 
-        <li className={`${baseLi} `}>
+        <li className={`${baseLi}group `}>
           <motion.h1
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 5, x: -520 }}
             animate={{ opacity: 1, y: 5, x: 5 }}
-            transition={{ duration: 0.4 }}
-            className="font-bold tracking-wider"
+            transition={{ duration: 0.2 }}
+            className="font-bold tracking-wider group-hover:scale-105 transition duration-500"
           >
-            Working in University Computer Lab in student teams
+            University Computer Lab with student teams
           </motion.h1>
           <motion.h4
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 5, x: -120 }}
             animate={{ opacity: 1, y: 5, x: 5 }}
-            transition={{ duration: 0.4 }}
-            className="font-medium opacity-70"
+            transition={{ duration: 0.5 }}
+            className="font-medium opacity-70 group-hover:scale-105 transition duration-500"
           >
             2023 - 2024
           </motion.h4>
           <motion.h3
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 5, x: 5 }}
-            transition={{ duration: 0.4 }}
+            transition={{ duration: 1 }}
             className="flex gap-2"
           >
             -build some lading page for our university projects
@@ -72,27 +72,27 @@ export default function Exprience() {
           </motion.h3>
         </li>
 
-        <li className={`${baseLi} `}>
+        <li className={`${baseLi} group`}>
           <motion.h1
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 5, x: -120 }}
             animate={{ opacity: 1, y: 5, x: 5 }}
-            transition={{ duration: 0.4 }}
-            className="font-bold tracking-wider"
+            transition={{ duration: 0.2 }}
+            className="font-bold tracking-wider group-hover:scale-105 transition duration-500"
           >
             free lancer
           </motion.h1>
           <motion.h4
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 5, x: -120 }}
             animate={{ opacity: 1, y: 5, x: 5 }}
-            transition={{ duration: 0.4 }}
-            className="font-medium opacity-70"
+            transition={{ duration: 0.5 }}
+            className="font-medium opacity-70 group-hover:scale-105 transition duration-500"
           >
             2024 - now
           </motion.h4>
           <motion.h3
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 5, x: 5 }}
-            transition={{ duration: 0.4 }}
+            transition={{ duration: 1 }}
             className="flex gap-2"
           >
             -build some lading page like worldwise / fastpizza / usepopcorn /

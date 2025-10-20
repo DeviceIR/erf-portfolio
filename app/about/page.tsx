@@ -19,7 +19,7 @@ export default function Page() {
   };
 
   return (
-    <section className="px-8 py-16 grid md:grid-cols-[2fr_5fr] gap-12 h-[600px]">
+    <section className="px-8 py-12 grid md:grid-cols-[2fr_5fr] gap-12 h-[800px]">
       {/* Buttons */}
       <div className="flex flex-col justify-start items-center">
         <h2 className="text-3xl font-bold mb-6 bg-[var(--color-background)] text-[var(--color-foreground)]">

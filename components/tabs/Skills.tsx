@@ -21,15 +21,15 @@ export default function Skills() {
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 5 }}
       transition={{ duration: 0.2 }}
-      className="w-full overflow-x-auto py-4"
+      className="w-full overflow-x-auto  py-4"
     >
-      <ul className="inline-grid pt-4 grid-rows-3 grid-flow-col auto-cols-[150px] gap-4">
-        <li className={`${baseLi} hover:text-orange-400`}>
+      <ul className="inline-grid pt-4 grid-cols-6 lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-6   grid-flow-row gap-x-4 gap-y-12">
+        <li className={`${baseLi} hover:text-orange-400 hover:scale-105`}>
           <span className={tooltip}>HTML</span>
           <FaHtml5 className="w-12 h-14" />
         </li>
 
-        <li className={`${baseLi} hover:text-blue-600`}>
+        <li className={`${baseLi} hover:text-blue-600 hover:scale-105`}>
           <span className={tooltip}>CSS</span>
           <IoLogoCss3 className="w-12 h-14" />
         </li>
@@ -60,7 +60,7 @@ export default function Skills() {
         </li>
 
         <li className={`${baseLi} hover:text-purple-900`}>
-          <span className={tooltip}>Motion Frame</span>
+          <span className={`${tooltip} w-[7rem]`}>Motion Frame</span>
           <TbBrandFramerMotion className="w-12 h-14" />
         </li>
 
@@ -70,7 +70,7 @@ export default function Skills() {
         </li>
 
         <li className={`${baseLi} hover:text-red-600`}>
-          <span className={tooltip}>Git and Github</span>
+          <span className={`${tooltip} w-[7rem]`}>Git and Github</span>
           <FaGitAlt className="w-12 h-14" />
         </li>
       </ul>
