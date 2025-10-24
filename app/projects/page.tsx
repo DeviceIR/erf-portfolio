@@ -1,5 +1,11 @@
 "use client";
 
+import { TimelineDemo } from "@/components/ui/TimeLineDemo";
+
 export default function Projects() {
-  return <div>Projects page</div>;
+  return (
+    <div>
+      <TimelineDemo />
+    </div>
+  );
 }

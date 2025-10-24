@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
+import { FaGamepad, FaUniversity, FaLaptopCode } from "react-icons/fa";
 
-import { FaGamepad, FaLaptopCode, FaReact, FaUniversity } from "react-icons/fa";
-
-export default function Education() {
+export default function Experience() {
   const baseDiv =
     "group bg-[var(--color-background)] text-[var(--color-foreground)] p-4 rounded-2xl flex flex-col items-start justify-center transition duration-500 relative hover:bg-[var(--color-background)] border border-transparent hover:border-green-500 shadow";
   const liStyle =
@@ -11,44 +10,12 @@ export default function Education() {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 0 }}
+      initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.2 }}
       className="w-full overflow-x-auto py-4"
     >
       <ul className="grid grid-cols-1 gap-4">
-        {/* --- Persian Gulf University --- */}
-        <li className={liStyle}>
-          <FaUniversity className="w-8 h-8 text-green-400" />
-
-          <div className={baseDiv}>
-            <motion.h1
-              initial={{ opacity: 0, x: -300 }}
-              animate={{ opacity: 1, x: 5 }}
-              transition={{ duration: 0.2 }}
-              className={`font-bold tracking-wider ${hoverText}`}
-            >
-              Persian Gulf University
-            </motion.h1>
-            <motion.h4
-              initial={{ opacity: 0, x: -200 }}
-              animate={{ opacity: 1, x: 5 }}
-              transition={{ duration: 0.5 }}
-              className={`font-medium opacity-70 ${hoverText}`}
-            >
-              2018 - 2023
-            </motion.h4>
-            <motion.h3
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 5, x: 5 }}
-              transition={{ duration: 1 }}
-            >
-              I obtained my Bachelor&apos;s degree in Computer Engineering from
-              Persian Gulf University.
-            </motion.h3>
-          </div>
-        </li>
-
         {/* --- Game Dev --- */}
         <li className={liStyle}>
           <FaGamepad className="w-8 h-8 text-green-400" />
@@ -67,20 +34,51 @@ export default function Education() {
               transition={{ duration: 0.5 }}
               className={`font-medium opacity-70 ${hoverText}`}
             >
-              2021 - 2022
+              2022 - 2023
             </motion.h4>
             <motion.h3
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 5, x: 5 }}
               transition={{ duration: 1 }}
             >
-              I passed several courses to achieve abilities in C# game design
-              and built a few mini games.
+              Built mini games like Zigzag, 3D Pong, and Poem Guess.
             </motion.h3>
           </div>
         </li>
 
-        {/* --- Self Learning Web Courses --- */}
+        {/* --- University Projects --- */}
+        <li className={liStyle}>
+          <FaUniversity className="w-8 h-8 text-green-400" />
+          <div className={baseDiv}>
+            <motion.h1
+              initial={{ opacity: 0, x: -800 }}
+              animate={{ opacity: 1, x: 5 }}
+              transition={{ duration: 0.2 }}
+              className={`font-bold tracking-wider ${hoverText}`}
+            >
+              University Computer Lab with Student Teams
+            </motion.h1>
+            <motion.h4
+              initial={{ opacity: 0, x: -200 }}
+              animate={{ opacity: 1, x: 5 }}
+              transition={{ duration: 0.5 }}
+              className={`font-medium opacity-70 ${hoverText}`}
+            >
+              2023 - 2024
+            </motion.h4>
+            <motion.h3
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 5, x: 5 }}
+              transition={{ duration: 1 }}
+            >
+              • Built landing pages for university projects. <br />
+              • Created a typing race website for World Computer Day. <br />•
+              Built a movie search website using multiple APIs.
+            </motion.h3>
+          </div>
+        </li>
+
+        {/* --- Freelancer --- */}
         <li className={liStyle}>
           <FaLaptopCode className="w-8 h-8 text-green-400" />
           <div className={baseDiv}>
@@ -90,7 +88,7 @@ export default function Education() {
               transition={{ duration: 0.2 }}
               className={`font-bold tracking-wider ${hoverText}`}
             >
-              Self Learning Web Courses
+              Freelancer
             </motion.h1>
             <motion.h4
               initial={{ opacity: 0, x: -200 }}
@@ -98,46 +96,15 @@ export default function Education() {
               transition={{ duration: 0.5 }}
               className={`font-medium opacity-70 ${hoverText}`}
             >
-              2022 - 2024
+              2024 - Now
             </motion.h4>
             <motion.h3
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 5, x: 5 }}
               transition={{ duration: 1 }}
             >
-              I passed several courses to achieve abilities like HTML, CSS, and
-              JavaScript.
-            </motion.h3>
-          </div>
-        </li>
-
-        {/* --- Self Study / Mini Projects --- */}
-        <li className={liStyle}>
-          <FaReact className="w-8 h-8 text-green-400" />
-          <div className={baseDiv}>
-            <motion.h1
-              initial={{ opacity: 0, x: -300 }}
-              animate={{ opacity: 1, x: 5 }}
-              transition={{ duration: 0.2 }}
-              className={`font-bold tracking-wider ${hoverText}`}
-            >
-              Self Study / Mini Projects
-            </motion.h1>
-            <motion.h4
-              initial={{ opacity: 0, x: -200 }}
-              animate={{ opacity: 1, x: 5 }}
-              transition={{ duration: 0.5 }}
-              className={`font-medium opacity-70 ${hoverText}`}
-            >
-              2023 - Now
-            </motion.h4>
-            <motion.h3
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 5, x: 5 }}
-              transition={{ duration: 1 }}
-            >
-              Studying and working with React.js, Next.js, and Vue 3 to gain
-              better experience.
+              • Built landing pages like WorldWise, FastPizza, UsePopcorn, and
+              Mapty. <br />• Collaborated on small freelance web projects.
             </motion.h3>
           </div>
         </li>

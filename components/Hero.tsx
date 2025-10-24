@@ -9,7 +9,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <section className="h-16 min-h-screen flex flex-col justify-center items-start px-6 md:px-20 bg-[var(--color-background)] text-[var(--color-forground)]">
+    <section className="h-16 mb-32 min-h-screen flex flex-col justify-center items-start px-6 md:px-20 bg-[var(--color-background)] text-[var(--color-forground)] ">
       {/* Main headline */}
       <motion.h3
         className="text-xl md:text-lg font-bold bg-[var(--color-background)] text-[var(--color-forground)] fade-in-5"
