@@ -26,7 +26,7 @@ import usePopCornitem2 from "@/public/projects/usepopcorn/usePopCornItem2.png";
 import typingBanner1 from "@/public/projects/Typing-competition/banner1.png";
 import typingBanner2 from "@/public/projects/Typing-competition/banner2.png";
 
-// Common image class
+// Common image class for all project images
 const imageClass = `
   w-full 
   rounded-lg 
@@ -38,14 +38,12 @@ const imageClass = `
 `;
 
 const data = [
-  // 🏋️ Workout Timer
   {
     title: "Workout Timer",
     content: (
       <div>
         <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-          Optimise your workout day efficiently with a modern timer that helps
-          track routines and rest intervals.
+          Optimise Your Workout Day sir!
         </p>
         <div className="grid grid-cols-2 gap-4">
           <Image
@@ -67,13 +65,10 @@ const data = [
         <ProjectFooter
           github="https://github.com/DeviceIR/workout-timer"
           onReadMore={() => console.log("open Workout modal")}
-          tech={["JS", "HTML", "CSS"]}
         />
       </div>
     ),
   },
-
-  // 🏦 Bankist App
   {
     title: "Bankist",
     content: (
@@ -85,8 +80,8 @@ const data = [
           className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200"
         >
           Bankist is a modern banking app clone designed to provide a smooth and
-          interactive experience with advanced UI and real-world dashboard
-          components.
+          interactive experience, showcasing advanced UI components and
+          realistic dashboards.
         </motion.p>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -94,8 +89,8 @@ const data = [
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200"
         >
-          Built with pure JavaScript and responsive layouts to simulate
-          professional financial applications.
+          I focused on responsive design, interactive elements, and clean
+          layouts to simulate a full-featured banking application.
         </motion.p>
 
         <div className="grid grid-cols-2 gap-4">
@@ -132,19 +127,10 @@ const data = [
         <ProjectFooter
           github="https://github.com/DeviceIR/11-Arrays-Bankist"
           onReadMore={() => console.log("open Bankist modal")}
-          tech={[
-            "HTML",
-            "CSS",
-            "JavaScript (ES6)",
-            "DOM Manipulation",
-            "Animations",
-          ]}
         />
       </div>
     ),
   },
-
-  // 🍕 Fast Pizza
   {
     title: "Fast Pizza (course)",
     content: (
@@ -155,8 +141,8 @@ const data = [
           transition={{ duration: 0.5 }}
           className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200"
         >
-          Fast Pizza is an interactive pizza ordering app built with modern
-          React stack, showcasing dynamic state and cart management.
+          Fast Pizza is a web app for exploring pizza menus and customizing
+          orders with an interactive, user-friendly interface.
         </motion.p>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -164,8 +150,8 @@ const data = [
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200"
         >
-          Features include menu exploration, responsive layouts, and real-time
-          order calculation.
+          I focused on clean UI, responsive layouts, and engaging user
+          interactions to simulate a real-world food ordering experience.
         </motion.p>
 
         <div className="grid grid-cols-2 gap-4">
@@ -188,13 +174,10 @@ const data = [
         <ProjectFooter
           github="https://github.com/DeviceIR/fast-react-pizza-v2"
           onReadMore={() => console.log("open FastPizza modal")}
-          tech={["JS", "HTML", "CSS"]}
         />
       </div>
     ),
   },
-
-  // 🍿 UsePopCorn
   {
     title: "UsePopCorn",
     content: (
@@ -205,8 +188,8 @@ const data = [
           transition={{ duration: 0.5 }}
           className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200"
         >
-          UsePopCorn is a fun and interactive movie discovery app that fetches
-          real movie data and allows rating favorites.
+          UsePopCorn is a movie discovery app with intuitive navigation for
+          browsing and discovering new movies.
         </motion.p>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -214,8 +197,8 @@ const data = [
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200"
         >
-          Built with custom hooks, reusable components, and asynchronous API
-          integration for seamless UX.
+          I focused on responsive layouts, interactive components, and a
+          visually appealing interface to enhance the user experience.
         </motion.p>
 
         <div className="grid grid-cols-2 gap-4">
@@ -252,13 +235,10 @@ const data = [
         <ProjectFooter
           github="https://github.com/DeviceIR/usepopcorn"
           onReadMore={() => console.log("open UsePopcorn modal")}
-          tech={["JS", "HTML", "APIs", "CSS Modules", "Responsive Design"]}
         />
       </div>
     ),
   },
-
-  // ⌨️ Typing Competition
   {
     title: "Typing Competition",
     content: (
@@ -269,8 +249,8 @@ const data = [
           transition={{ duration: 0.5 }}
           className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200"
         >
-          Typing Competition lets players race against each other in real time,
-          tracking WPM, accuracy, and errors.
+          Typing Competition is an interactive platform where users race against
+          each other in typing challenges to improve speed and accuracy.
         </motion.p>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -278,8 +258,8 @@ const data = [
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200"
         >
-          Developed with Next.js, MongoDB, and Socket.io for real-time
-          multiplayer typing experience.
+          I implemented a smooth UI, score tracking, and responsive layout to
+          create a fun and engaging typing experience.
         </motion.p>
 
         <div className="grid grid-cols-2 gap-4">
@@ -302,15 +282,6 @@ const data = [
         <ProjectFooter
           github="https://github.com/DeviceIR"
           onReadMore={() => console.log("open Typing modal")}
-          tech={[
-            "JS",
-            "ReactJs",
-            "HTML",
-            "CSS",
-            "MongoDB",
-            "Socket.io",
-            "Framer Motion",
-          ]}
         />
       </div>
     ),

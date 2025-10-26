@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import React, { useState } from "react";
-import Experience from "@/components/tabs/Experience-timeline";
+import Experience from "@/components/tabs/Experience";
 import Education from "@/components/tabs/Education";
 import Skills from "@/components/tabs/Skills";
 import AboutMe from "@/components/tabs/Aboutme";
