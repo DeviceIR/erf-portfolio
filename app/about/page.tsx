@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/Button";
 import React, { useState } from "react";
 import Experience from "@/components/tabs/Experience";
 import Education from "@/components/tabs/Education";

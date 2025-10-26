@@ -2,16 +2,27 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
+import { Variants } from "framer-motion";
+
+import { Button } from "@/components/ui/Button";
 import { ModeToggle } from "./ui/ModeToggle";
 
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "Projects", href: "/projects" },
   { name: "About", href: "/about" },
-  // { name: "Blog", href: "/blog" },
-  // { name: "Contact", href: "/contact" },
 ];
+
+const linkHover: Variants = {
+  hover: {
+    y: -2,
+    scale: 1.05,
+    transition: {
+      type: "spring" as const,
+      stiffness: 300,
+    },
+  },
+};
 
 export default function Navbar() {
   const linkHover = {
