@@ -22,7 +22,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
   github = "https://github.com/",
   instagram = "https://instagram.com/",
   telegram = "https://t.me/Senduro_Erf",
-  author = "Erfan",
+  // author = "Erfan",
 }) => {
   const [formData, setFormData] = useState({
     name: "",

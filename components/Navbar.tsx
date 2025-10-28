@@ -25,13 +25,13 @@ const linkHover: Variants = {
 };
 
 export default function Navbar() {
-  const linkHover = {
-    hover: {
-      y: -2,
-      scale: 1.05,
-      transition: { type: "spring", stiffness: 300 },
-    },
-  };
+  // const linkHover = {
+  //   hover: {
+  //     y: -2,
+  //     scale: 1.05,
+  //     transition: { type: "spring", stiffness: 300 },
+  //   },
+  // };
 
   return (
     <nav className="fixed top-0 w-full bg-[var(--color-background)] text-[var(--color-forground)] bg-opacity-70 backdrop-blur-md z-50 shadow-sm border-1  border-b-[#ffffffd1AR] ">

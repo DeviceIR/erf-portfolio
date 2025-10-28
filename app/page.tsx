@@ -1,8 +1,8 @@
 "use client";
 
 import Hero from "@/components/Hero";
-import About from "./about/page";
-import Projects from "./projects/page";
+// import About from "./about/page";
+// import Projects from "./projects/page";
 
 export default function Home() {
   return (
