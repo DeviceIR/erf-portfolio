@@ -7,6 +7,9 @@
   --color-background: var(--background);
   --color-card-background: var(--card-background);
   --color-foreground: var(--foreground);
+  --color-projectl: var(--color-blue-500);
+  --color-projectd: var(--color-green-500);
+  --color-project: var(--project);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --color-sidebar-ring: var(--sidebar-ring);
@@ -49,6 +52,8 @@
   --background: oklch(1 0 0);
   /* --foreground: oklch(0.145 0 0); */
   --foreground: #112a46;
+
+  --project: var(--color-projectl);
   --card-background: oklch(89.3% 0.00216 14.61 / 0.788);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -84,6 +89,7 @@
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
+  --project: var(--color-projectd);
   --card-background: oklch(46.76% 0.00005 271.152 / 0.808);
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
@@ -122,5 +128,19 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+@media print {
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+  }
+
+  main {
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 1rem !important; /* keep a little breathing room */
   }
 }

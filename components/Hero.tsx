@@ -83,7 +83,7 @@ export default function Hero() {
         className="mt-10 flex gap-4"
       >
         <Link
-          href="https://drive.google.com/file/d/1huVu1ayio9u_1bS6lUrQ3zroIt52uNDm/view?usp=drive_link"
+          href="http://localhost:3000/CV"
           className=" bg-[var(--color-background)] text-[var(--color-forground)] border-[var(--color--foreground)]
            border-2 px-6 py-2 rounded-3xl 
            font-medium  transition"
@@ -107,7 +107,7 @@ export default function Hero() {
             <GrInstagram className=" w-4 h-4" />
           </Link>
           <Link
-            href=""
+            href="https://github.com/DeviceIR"
             className=" bg-[var(--color-background)] text-[var(--color-forground)] border-[var(--color--foreground)]
           border-1 w-8 h-8
           rounded-full 
